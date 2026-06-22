@@ -97,6 +97,8 @@ done
 - [Contributing](CONTRIBUTING.md)：如何提 issue、提 PR、跑验证。
 - [License](LICENSE)：当前公开包使用 MIT License。
 - [Security](SECURITY.md)：发现密钥、私有数据或安全问题时怎么处理。
+- [Issue template](.github/ISSUE_TEMPLATE/skill_toolkit_issue.yml)：提问题时按结构描述类型、路径、现状、预期和验证。
+- [Pull request template](.github/pull_request_template.md)：提 PR 时说明改了什么、怎么验证、是否越过公开边界。
 
 ## 许可
 

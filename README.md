@@ -20,5 +20,7 @@ Community files:
 - [Contributing](CONTRIBUTING.md)
 - [License](LICENSE)
 - [Security](SECURITY.md)
+- [Issue template](.github/ISSUE_TEMPLATE/skill_toolkit_issue.yml)
+- [Pull request template](.github/pull_request_template.md)
 
 License: MIT.

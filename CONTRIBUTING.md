@@ -35,12 +35,16 @@ Good issue titles are concrete, for example:
 - `README quick start should include Claude Code install path`
 - `Add lifecycle diagram for adopter -> overlay -> creator -> modify -> evolver`
 
+Use the GitHub issue form when available: [.github/ISSUE_TEMPLATE/skill_toolkit_issue.yml](.github/ISSUE_TEMPLATE/skill_toolkit_issue.yml).
+
 ## Pull request flow
 
 1. Keep the change focused.
 2. Update docs when behavior, install steps, or public boundaries change.
 3. Run the validation commands below.
 4. In the PR description, include what changed, how you verified it, and any known evidence gaps.
+
+Use the pull request template at [.github/pull_request_template.md](.github/pull_request_template.md).
 
 ## Validation
 
