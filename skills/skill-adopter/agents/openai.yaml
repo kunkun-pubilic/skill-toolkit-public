@@ -1,0 +1,7 @@
+interface:
+  display_name: "Skill Adopter"
+  short_description: "在新建、改造、迁移或采用 Skill 前，先调研官方/成熟上游并生成 source card。"
+  default_prompt: "使用 $skill-adopter 从真实需求出发调研官方/成熟上游 Skill，读候选 SKILL.md 并生成 source card；能直接用就拉取、锁定并验证，不够用则交给 overlay，没有上游才创建或修改 Kun-owned Skill。"
+policy:
+  allow_implicit_invocation: true
+  invocation_policy: on_demand

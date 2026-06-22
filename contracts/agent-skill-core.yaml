@@ -1,0 +1,42 @@
+id: agent-skill-core
+version: 1
+upstream_sources:
+  - agent-skills-spec
+
+required_files:
+  - SKILL.md
+
+optional_directories:
+  - agents
+  - references
+  - scripts
+  - assets
+
+frontmatter:
+  required_keys:
+    - name
+    - description
+  default_allowed_keys:
+    - name
+    - description
+  name_format: kebab-case
+  description_max_chars: 500
+  description_purpose: trigger_conditions_only
+
+invocation_policy:
+  atomic_skill: on_demand
+  group: install_only
+  group_callable: false
+  facade: blocked_unless_runtime_or_user_requested
+
+applied_rules:
+  - id: core.required-skill-md
+    text: Every generated skill is a directory with a required SKILL.md.
+  - id: core.frontmatter-name-description
+    text: SKILL.md frontmatter must include name and description.
+  - id: core.local-resources
+    text: Supporting files must stay inside the skill directory under agents, references, scripts, or assets.
+  - id: core.progressive-disclosure
+    text: The description is for discovery; the full SKILL.md and resources load only when relevant.
+  - id: core.atomic-on-demand
+    text: Generated Skills are atomic on-demand invocation units; registry groups are install-only and not callable facades.

@@ -1,0 +1,31 @@
+id: codex-skill
+version: 1
+host: codex
+upstream_sources:
+  - openai-codex-skills-docs
+  - openai-skills
+
+install_targets:
+  project: .agents/skills
+  user: ~/.agents/skills
+
+required_files:
+  - agents/openai.yaml
+
+openai_yaml:
+  path: agents/openai.yaml
+  required_interface_fields:
+    - display_name
+    - short_description
+    - default_prompt
+  default_policy:
+    allow_implicit_invocation: true
+    invocation_policy: on_demand
+
+applied_rules:
+  - id: codex.openai-yaml
+    text: Generate agents/openai.yaml for Codex UI metadata, invocation policy, and future dependencies.
+  - id: codex.project-skill-path
+    text: Generated skills must be compatible with project installation under .agents/skills.
+  - id: codex.no-plugin-by-default
+    text: Do not require Plugin packaging unless runtime integration is needed.

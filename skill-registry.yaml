@@ -1,0 +1,92 @@
+version: 1
+edition: public
+updated_at: "2026-06-22"
+
+policy:
+  router_skill: none
+  facade_skill: none
+  default_asset_unit: skill
+  private_registry_required: false
+  default_invocation_policy:
+    atomic_skill: on_demand
+    group: install_only
+    group_callable: false
+    facade: blocked_unless_runtime_or_user_requested
+  active_hosts:
+    - codex
+    - claude_code
+
+skills:
+  - id: skill-adopter
+    path: skills/skill-adopter
+    role: Research official or mature upstream Agent Skills, install usable ones, and write local lock evidence.
+    default_route: official-adopt
+    public_standalone_ready: true
+    validation:
+      - python3 -m py_compile skills/skill-adopter/scripts/adopt_skill.py
+      - python3 -m py_compile skills/skill-adopter/scripts/research_skill.py
+      - python3 -m py_compile skills/skill-adopter/scripts/source_card_to_registry.py
+      - python3 skills/skill-modify/scripts/quick_validate.py skills/skill-adopter
+      - python3 skills/skill-modify/scripts/audit_skill.py skills/skill-adopter
+
+  - id: skill-overlay
+    path: skills/skill-overlay
+    role: Replay a small compatibility layer on top of a pinned public upstream Skill.
+    default_route: official-overlay
+    public_standalone_ready: true
+    validation:
+      - python3 -m py_compile skills/skill-overlay/scripts/apply_overlay.py
+      - python3 skills/skill-modify/scripts/quick_validate.py skills/skill-overlay
+      - python3 skills/skill-modify/scripts/audit_skill.py skills/skill-overlay
+
+  - id: skill-creator
+    path: skills/skill-creator
+    role: Create a new Agent Skill only after upstream adoption or overlay has been ruled out.
+    default_route: kun-create
+    public_standalone_ready: true
+    required_repo_resources:
+      - contracts/agent-skill-core.yaml
+      - contracts/codex-skill.yaml
+      - contracts/claude-code-skill.yaml
+      - contracts/kun-governance.yaml
+    public_standalone_flag: --public-standalone
+    validation:
+      - python3 -m py_compile skills/skill-creator/scripts/create_skill.py
+      - python3 skills/skill-modify/scripts/quick_validate.py skills/skill-creator
+      - python3 skills/skill-modify/scripts/audit_skill.py skills/skill-creator
+
+  - id: skill-modify
+    path: skills/skill-modify
+    role: Repair existing Agent Skills and validate their resources, triggers, and proof surfaces.
+    default_route: repair-existing
+    public_standalone_ready: true
+    validation:
+      - python3 skills/skill-modify/scripts/quick_validate.py skills/skill-modify
+      - python3 skills/skill-modify/scripts/audit_skill.py skills/skill-modify
+
+  - id: skill-evolver
+    path: skills/skill-evolver
+    role: "Decide where proven real-use improvements should land: upstream, overlay, local patch, fork, or no-change."
+    default_route: reusable-delta-placement
+    public_standalone_ready: true
+    validation:
+      - python3 -m py_compile skills/skill-evolver/scripts/build_patch_plan.py
+      - python3 -m py_compile skills/skill-evolver/scripts/audit_incremental_update.py
+      - python3 skills/skill-modify/scripts/quick_validate.py skills/skill-evolver
+      - python3 skills/skill-modify/scripts/audit_skill.py skills/skill-evolver
+
+install_order:
+  normal_skill_work:
+    - skill-adopter
+    - skill-overlay
+    - skill-creator
+    - skill-modify
+    - skill-evolver
+
+install_notes:
+  - This public edition has no callable facade. Install the atomic Skills and let their descriptions trigger them on demand.
+  - Use skill-adopter before skill-creator whenever a new capability is requested.
+  - Use skill-overlay when upstream is useful but needs host compatibility or local policy.
+  - Use skill-modify for broken existing Skills.
+  - Use skill-evolver only after real-use or pressure-scenario evidence exists.
+  - Missing private registry, DOKO, cache, or organization lockfiles are evidence gaps, not hidden success.

@@ -1,0 +1,38 @@
+id: kun-governance
+version: 1
+upstream_sources: []
+
+required_sections:
+  - "## 官方依据"
+  - "## 输出契约"
+  - "## 本技能的 deletion-spec"
+
+required_generated_references:
+  - references/official-basis.md
+  - references/pilot-closed-loop.md
+
+invocation_policy:
+  atomic_skill: on_demand
+  group: install_only
+  group_callable: false
+  facade: blocked_unless_runtime_or_user_requested
+
+plugin_exception_only_for:
+  - mcp_server_config
+  - oauth_or_app_authorization
+  - browser_or_desktop_bridge
+  - hooks
+  - hosted_app_or_widget_runtime
+  - marketplace_or_cache_runtime_semantics
+
+applied_rules:
+  - id: kun.official-basis
+    text: Generated skills must include references/official-basis.md with upstream locks, contracts, and applied rules.
+  - id: kun.deletion-spec
+    text: Generated SKILL.md must include a concrete deletion-spec.
+  - id: kun.proof-surface
+    text: Generated SKILL.md must state proof surface and validation commands.
+  - id: kun.plugin-exception
+    text: Keep the asset as a Skill unless runtime integration requires Plugin packaging.
+  - id: kun.no-callable-group
+    text: Do not create callable suite, group, orchestra, or facade entries unless runtime integration or an explicit user-requested facade requires it.

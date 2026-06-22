@@ -1,7 +1,7 @@
 .DS_Store
 Thumbs.db
 
-# Raw production files are intentionally excluded from this public resource pack.
+# Raw production files are intentionally excluded from this public Skill pack.
 raw/
 *.mov
 *.MOV
@@ -17,4 +17,5 @@ raw/
 node_modules/
 .venv/
 __pycache__/
-
+dist/
+*.skill

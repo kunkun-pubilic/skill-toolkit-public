@@ -1,0 +1,28 @@
+id: claude-code-skill
+version: 1
+host: claude_code
+upstream_sources:
+  - claude-code-skills-docs
+  - anthropics-skills
+
+install_targets:
+  project: .claude/skills
+  user: ~/.claude/skills
+
+frontmatter_extensions:
+  optional_allowed_keys:
+    - allowed-tools
+    - disable-model-invocation
+    - user-invocable
+    - context
+    - arguments
+  default_values:
+    disable-model-invocation: false
+
+applied_rules:
+  - id: claude.frontmatter-extensions
+    text: Claude Code may use optional frontmatter fields such as allowed-tools and disable-model-invocation.
+  - id: claude.concise-body
+    text: Keep SKILL.md concise because loaded skill content remains in context.
+  - id: claude.no-extra-fields-by-default
+    text: Do not add Claude-specific frontmatter fields unless explicitly requested.

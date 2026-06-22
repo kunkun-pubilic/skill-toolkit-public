@@ -1,0 +1,7 @@
+interface:
+  display_name: "Skill Overlay"
+  short_description: "给已锁定的官方/可信上游 Skill 重放 Kun 兼容层。"
+  default_prompt: "使用 $skill-overlay 根据 overlay manifest 生成 Kun 兼容的上游 Skill，并保留官方来源证据。"
+policy:
+  allow_implicit_invocation: true
+  invocation_policy: on_demand

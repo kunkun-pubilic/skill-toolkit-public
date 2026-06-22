@@ -1,0 +1,7 @@
+interface:
+  display_name: "技能演化器"
+  short_description: "面向已有技能的增量升级、任务过程复盘与结构化改动规划"
+  default_prompt: "使用 $skill-evolver 把真实任务过程转成可审查的技能改进建议，或为现有技能做增量能力更新。"
+policy:
+  allow_implicit_invocation: true
+  invocation_policy: on_demand
