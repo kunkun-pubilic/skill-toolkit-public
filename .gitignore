@@ -1,0 +1,20 @@
+.DS_Store
+Thumbs.db
+
+# Raw production files are intentionally excluded from this public resource pack.
+raw/
+*.mov
+*.MOV
+*.mp4
+*.MP4
+*.wav
+*.aac
+
+# Local agent/runtime caches
+.agents/
+.claude/
+.source-repos/
+node_modules/
+.venv/
+__pycache__/
+

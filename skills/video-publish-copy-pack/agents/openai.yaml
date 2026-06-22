@@ -1,0 +1,7 @@
+interface:
+  display_name: "视频发布文案包"
+  short_description: "统一主干、多平台适配的视频发布文案包"
+  default_prompt: "Create a unified publish copy pack from the verified video, cover package, and Kun's publish intent. Keep one expression spine, adapt per platform, and output machine-readable/copy-ready fields."
+policy:
+  allow_implicit_invocation: true
+  invocation_policy: on_demand

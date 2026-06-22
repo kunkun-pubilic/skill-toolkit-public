@@ -1,0 +1,102 @@
+content_id: skill-toolkit-round15
+status: local_verified_not_published
+source:
+  publish_manifest: publish-manifest.yaml
+  final_video: useful_videos/skill_toolkit_round15_final_16x9.mp4
+  cover_lock: cover-lock.md
+  script: script.md
+target_platforms:
+  - youtube
+  - bilibili
+  - xiaohongshu
+  - wechat_channels
+  - douyin
+  - x
+core_claim: "Skill 的价值不是多存一段规则，而是把反复发生的判断、材料和机械动作，变成 Agent 可以调用、验证、维护的工作接口。"
+viewer_takeaway: "看完后，观众应该知道一个好 Skill 为什么要像接口一样设计：入口清楚、材料可追溯、机械动作可验证，并且能在工作流里长期维护。"
+title_theme:
+  main_angle: "会写 Skill 还不够，关键是把它做成 Agent 的工作接口"
+  tension: "市场已经在教育 Skill 概念，真正需要讲清楚的是 Skill 如何从一个文件变成可维护的工作流接口。"
+  selected_main_title: "会写 Skill 还不够：关键是把它做成 Agent 的工作接口"
+  alternates:
+    - "Skill 真正难的不是写，而是做成可维护的工作接口"
+    - "一个好 Skill 应该像接口，而不是像说明书"
+    - "Agent Skill 怎么做才有用？先让它接上工作流"
+    - "Skill 多了以后，真正难的是维护工作流"
+    - "从会用 Skill 到会管理 Skill：我的 Agent 工作流方法"
+  must_include_terms:
+    - Skill
+    - Agent
+    - 工作接口
+  must_avoid_terms:
+    - 别再复制提示词
+    - 干货满满
+    - 保姆级教程
+    - 普通人也能轻松掌握
+description_intro:
+  text: "这期我聊的是自己对 Agent Skill 的真实理解。现在 Skill 这个概念已经不新了，真正值得继续往下讲的是：一个 Skill 怎么从一段规则，变成 Agent 可以调用、验证、维护的工作接口。"
+supplement:
+  items:
+    - "视频里提到的核心分层是：判断交给 LLM，材料放到 references，机械动作交给 scripts、工具、命令和检查器。"
+resource_cta:
+  enabled: false
+  status: omitted_until_resource_ready
+  link_label: ""
+  url: ""
+  promise: ""
+chapters:
+  source: "knowledge/publish/skill-toolkit-publish-package.md"
+  items:
+    - "00:00 开场：我对 Agent Skill 的理解"
+    - "00:15 Skill 不是把提示词存起来"
+    - "00:49 判断、材料、机械动作"
+    - "02:02 做 Skill 的第一件事：先分层"
+    - "02:10 Skill 的运行逻辑"
+    - "02:59 Skill Toolkit 解决什么"
+    - "03:53 创建 Skill 前先问什么"
+    - "04:29 修复与演化 Skill"
+    - "05:51 从 Skill 到 Plugin"
+    - "06:48 普通人的入口"
+    - "07:33 结尾：获取 Skill Toolkit"
+tags:
+  global:
+    - AI工作流
+    - Agent
+    - Skill
+    - Prompt
+    - Plugin
+    - Codex
+    - Claude Code
+    - Vibe Coding
+    - 工作流自动化
+platform_fields:
+  youtube:
+    title: "会写 Skill 还不够：关键是把它做成 Agent 的工作接口"
+    cover: cover-youtube-16x9.jpg
+  bilibili:
+    title: "会写 Skill 还不够：关键是把它做成 Agent 的工作接口"
+    cover: cover-youtube-16x9.jpg
+  xiaohongshu:
+    title: "一个好 Skill 应该像接口，而不是像说明书"
+    cover: cover-xiaohongshu-3x4.jpg
+  wechat_channels:
+    title: "Skill 的价值，是让 Agent 接上工作流"
+    cover: cover-xiaohongshu-3x4.jpg
+  douyin:
+    title: "一个好 Skill 应该像接口"
+    cover: cover-xiaohongshu-3x4.jpg
+  x:
+    title: "A useful Skill behaves like an interface."
+    cover: cover-square-1x1.jpg
+avoid_claims:
+  - "不要再把主钩子写成别再复制提示词。"
+  - "不要说这是保姆级教程。"
+  - "不要承诺已经有公开下载链接。"
+  - "不要把 Skill Toolkit 包装成已经完全产品化的工具。"
+  - "不要写泛泛的点赞关注套话。"
+quality_gates:
+  unified_spine: pass
+  platform_adaptation: pass
+  human_voice: pass
+  real_resource_claims: pass
+  publish_not_performed: pass
