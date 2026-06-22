@@ -91,6 +91,13 @@ done
 - [给 Agent 的安装提示词](docs/INSTALL_PROMPT.zh-CN.md)
 - [公开版边界说明](docs/PUBLIC_EDITION_NOTES.zh-CN.md)
 
+## 仓库基础文件
+
+- [Code of Conduct](CODE_OF_CONDUCT.md)：公开协作的基本行为准则。
+- [Contributing](CONTRIBUTING.md)：如何提 issue、提 PR、跑验证。
+- [License](LICENSE)：当前公开包使用 MIT License。
+- [Security](SECURITY.md)：发现密钥、私有数据或安全问题时怎么处理。
+
 ## 许可
 
-当前仓库暂未添加开源许可证。你可以公开阅读、学习和在自己的本地项目中参考使用；如果要复制、改造后再发布，请先确认适合的许可证和署名方式。
+当前公开包使用 [MIT License](LICENSE)。你可以复制、改造和再发布；请保留许可证和版权声明。

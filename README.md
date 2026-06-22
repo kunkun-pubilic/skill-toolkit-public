@@ -13,3 +13,12 @@ It contains five lifecycle Skills:
 Start with the Chinese guide: [README.zh-CN.md](README.zh-CN.md).
 
 Public edition note: Kun's private registry is not included. The Skills can still be used in standalone mode; missing private registry or local tooling should be recorded as evidence gaps rather than hidden.
+
+Community files:
+
+- [Code of Conduct](CODE_OF_CONDUCT.md)
+- [Contributing](CONTRIBUTING.md)
+- [License](LICENSE)
+- [Security](SECURITY.md)
+
+License: MIT.
