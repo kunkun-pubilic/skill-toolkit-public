@@ -1,0 +1,12 @@
+{
+  "model": "openai/gpt-image-2",
+  "provider": "fal.ai",
+  "requestId": "019ef43c-68c8-70b3-b449-506301737257",
+  "image": {
+    "width": 1024,
+    "height": 1024,
+    "content_type": "image/png",
+    "file_name": "Ton8TKWlwyWR6-8GsLLkB_CMG1DjFk.png"
+  },
+  "prompt": "Use case: logo-brand\nAsset type: repository logo mark, square 1024x1024\nPrimary request: Create a polished logo mark for an open-source Agent Skill Toolkit. It should communicate reusable skills, lifecycle, modular tools, and human-readable automation.\nSubject: an abstract interlocking loop and small toolkit nodes, like five reusable capability blocks orbiting a central spark.\nStyle/medium: premium vector-friendly 3D icon rendered as a clean bitmap, modern open-source developer tool brand, not corporate stock.\nComposition/framing: centered square mark with generous padding, simple silhouette, works at small size.\nColor palette: deep ink, clear cyan, fresh green, warm yellow accent, white background.\nLighting/mood: crisp, optimistic, professional, high contrast.\nText: no text.\nConstraints: no letters, no words, no watermark, no mockup, no laptop, no mascot, no human figure, no trademark-like symbol."
+}

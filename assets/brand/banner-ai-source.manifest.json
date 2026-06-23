@@ -1,0 +1,12 @@
+{
+  "model": "openai/gpt-image-2",
+  "provider": "fal.ai",
+  "requestId": "019ef43c-6643-75b2-8c9b-c56d790ebecc",
+  "image": {
+    "width": 1088,
+    "height": 608,
+    "content_type": "image/png",
+    "file_name": "vf8aFXFaqyIAXdPRB8av7_yiG4aar2.png"
+  },
+  "prompt": "Use case: ads-marketing\nAsset type: README hero banner background, wide landscape crop-safe\nPrimary request: Create a polished text-free hero banner image for an open-source Agent Skill Toolkit public repository. The image should feel like a premium developer workbench for reusable AI skills.\nScene/backdrop: clean modern desktop/workbench abstraction with modular skill cards, subtle workflow lines, small command palette shapes, and five lifecycle nodes from left to right.\nSubject: reusable agent skills becoming a clear workflow; public open-source package; Codex and Claude Code friendly.\nStyle/medium: high-end editorial product illustration, semi-3D glass and soft-matte shapes, crisp but not busy.\nComposition/framing: wide landscape banner composition, visual energy on the left and center, calm negative space for readable title overlay on the right; safe margins; no important details at edges.\nColor palette: off-white base, ink black, cyan, green, yellow accent, small coral accent; avoid purple gradients and dark blue monotone.\nLighting/mood: bright, trustworthy, sophisticated, practical.\nText: no text.\nConstraints: no letters, no words, no watermark, no people, no robots, no logos, no screenshots, no blurry background."
+}

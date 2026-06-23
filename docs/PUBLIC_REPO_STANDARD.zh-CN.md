@@ -57,6 +57,8 @@ README 首屏需要直接给出：
 - demo 图；
 - 可维护源文件，例如 SVG 和 Mermaid。
 
+品牌视觉（logo、banner、social preview）优先用图片模型生成源图，再由本地脚本做裁切、文字和 badge 排版。仓库里的中文标题、安装命令、workflow 和 demo 文案不要交给图片模型生成，避免乱码和不可复现。
+
 本期不放视频资产，也不做 GIF。图片资产要有 `assets/README.md` 说明来源、生成方式和边界。
 
 ## Discoverability 标准

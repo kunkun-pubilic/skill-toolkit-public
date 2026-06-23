@@ -51,6 +51,8 @@ Public repositories should include the images needed by the README:
 - demo image;
 - maintainable sources such as SVG and Mermaid.
 
+Use an image model for brand source images such as the logo, banner, and social preview. Keep readable repository text, badges, workflow labels, commands, and demo copy in local scripted layout so they stay legible and reproducible.
+
 Video assets and GIFs are out of scope for this pass. Keep an `assets/README.md` that explains source, generation, and boundary.
 
 ## Discoverability
