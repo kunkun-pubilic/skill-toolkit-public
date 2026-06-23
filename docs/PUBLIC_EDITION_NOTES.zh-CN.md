@@ -1,5 +1,7 @@
 # 公开版边界说明
 
+English version: [PUBLIC_EDITION_NOTES.en.md](PUBLIC_EDITION_NOTES.en.md)
+
 这个仓库是 Skill Toolkit 的 public edition，不是 Kun 内部治理系统的完整公开镜像。
 
 ## 包含
@@ -19,6 +21,8 @@
   - Kun 风格的验证和 deletion-spec 约束。
 - `WORKFLOW.md` 和 `skill-registry.yaml`：
   - 说明这些 Skill 的关系和安装顺序。
+
+本期公开版只包含这五个 lifecycle skills。`plugin-manager` 涉及 runtime/plugin 发行语义，暂不公开。
 
 ## 不包含
 

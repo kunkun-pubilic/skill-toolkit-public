@@ -1,5 +1,7 @@
 # 快速安装与验证
 
+English version: [QUICK_START.en.md](QUICK_START.en.md)
+
 ## 1. 克隆公开包
 
 ```bash
@@ -20,6 +22,8 @@ cp -R skills/skill-overlay "$PROJECT/.agents/skills/"
 cp -R skills/skill-modify "$PROJECT/.agents/skills/"
 cp -R skills/skill-evolver "$PROJECT/.agents/skills/"
 ```
+
+公开包只安装这五个 lifecycle skills；`plugin-manager` 不属于本期 public edition。
 
 ## 3. 安装到 Claude Code 项目
 

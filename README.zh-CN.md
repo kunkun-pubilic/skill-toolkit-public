@@ -8,6 +8,8 @@
 
 这个公开包面向看完视频后想拿到同款工具的人：你可以直接复制这些 Skill 到自己的 Codex / Claude Code 项目里，让 Agent 帮你找上游 Skill、创建新 Skill、修已有 Skill、做 overlay，或者把真实使用后的有效改进沉淀回 Skill。
 
+English entry: [README.md](README.md)
+
 ## 包里有什么
 
 | 路径 | 用途 |
@@ -21,6 +23,8 @@
 | `WORKFLOW.md` | 五个 Skill 如何组成生命周期工作流。 |
 | `skill-registry.yaml` | 公开包内的 Skill 清单和建议安装顺序。 |
 
+公开版只包含这五个 lifecycle skills。私有仓里的 `plugin-manager` 不属于本期公开包；它涉及 runtime/plugin 发行语义，后续如需公开会单独设计。
+
 ## 快速开始
 
 克隆仓库：
@@ -33,18 +37,17 @@ cd skill-toolkit-public
 安装到某个项目的 Codex Skill 目录：
 
 ```bash
-mkdir -p /path/to/your/project/.agents/skills
-cp -R skills/skill-adopter /path/to/your/project/.agents/skills/
-cp -R skills/skill-creator /path/to/your/project/.agents/skills/
-cp -R skills/skill-overlay /path/to/your/project/.agents/skills/
-cp -R skills/skill-modify /path/to/your/project/.agents/skills/
-cp -R skills/skill-evolver /path/to/your/project/.agents/skills/
+PROJECT=/path/to/your/project
+mkdir -p "$PROJECT/.agents/skills"
+cp -R skills/skill-adopter skills/skill-overlay skills/skill-creator skills/skill-modify skills/skill-evolver "$PROJECT/.agents/skills/"
 ```
 
 安装到 Claude Code 项目目录时，把目标换成：
 
 ```bash
-/path/to/your/project/.claude/skills
+PROJECT=/path/to/your/project
+mkdir -p "$PROJECT/.claude/skills"
+cp -R skills/skill-adopter skills/skill-overlay skills/skill-creator skills/skill-modify skills/skill-evolver "$PROJECT/.claude/skills/"
 ```
 
 建议把 `contracts/` 也保留在这个仓库里。`skill-creator` 的脚本会从仓库根目录读取它。
@@ -56,6 +59,21 @@ cp -R skills/skill-evolver /path/to/your/project/.agents/skills/
 3. `skill-creator`：确认没有合适上游后再从零创建。
 4. `skill-modify`：已有 Skill 不好用时先修。
 5. `skill-evolver`：真实使用证明有复用价值后再沉淀增量。
+
+## 一个最小 Demo
+
+仓库里有一个公开安全的最小示例：[examples/customer-message-digest](examples/customer-message-digest)。
+
+它演示的是：如何把“整理客户聊天记录”这类重复工作，拆成输入、输出、边界、验证面和 `skill-creator --public-standalone` 命令。示例不包含真实客户材料。
+
+## 视觉资料计划
+
+视频片段、Workflow 图、Demo 和 GIF 会放进 public repo，但最终媒体资产先不直接生成。当前先看这两份方案：
+
+- [视觉资产方案（中文）](docs/VISUAL_ASSET_PLAN.zh-CN.md)
+- [Visual asset proposal](docs/VISUAL_ASSET_PLAN.en.md)
+
+方案通过后再补实际文件，避免把不合适的视频素材、内部画面或过度复杂的演示直接放进公开仓。
 
 ## 验证
 
@@ -87,9 +105,13 @@ done
 更多说明见：
 
 - [快速安装与验证](docs/QUICK_START.zh-CN.md)
+- [Quick Start](docs/QUICK_START.en.md)
 - [生命周期工作流](docs/SKILL_LIFECYCLE.zh-CN.md)
 - [给 Agent 的安装提示词](docs/INSTALL_PROMPT.zh-CN.md)
 - [公开版边界说明](docs/PUBLIC_EDITION_NOTES.zh-CN.md)
+- [Public edition notes](docs/PUBLIC_EDITION_NOTES.en.md)
+- [公开仓库标准](docs/PUBLIC_REPO_STANDARD.zh-CN.md)
+- [Public repository standard](docs/PUBLIC_REPO_STANDARD.en.md)
 
 ## 仓库基础文件
 
