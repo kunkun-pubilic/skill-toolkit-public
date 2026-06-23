@@ -22,11 +22,13 @@ README 首屏需要直接给出：
 
 ## 双语标准
 
-- 中文为主：`README.zh-CN.md` 承载完整说明。
-- 英文为辅：`README.md` 和 `.en.md` 文档承载可搜索、可引用的英文入口。
+- 中文为主：`README.md` 承载完整中文首屏和安装路径。
+- 英文为辅：`README.en.md` 承载英文入口。
 - 两种语言的信息结构保持一致；英文可以更短，但不能缺少安装、验证和公开边界。
 
 ## 安装标准
+
+公开仓默认用户是空系统：没有 Kun 的私有 registry，没有本机 cache，也不需要先理解内部治理系统。
 
 公开仓至少给三条路径：
 
@@ -44,13 +46,18 @@ README 首屏需要直接给出：
 - 用一个普通读者能理解的任务，例如整理客户聊天记录。
 - 展示输入、输出、非范围、验证命令和 Agent 调用方式。
 
-## 视觉资产标准
+## 图片资产标准
 
-Workflow 图、Demo、GIF 和视频素材可以进入公开仓，但要先经过 review：
+公开仓应直接包含 README 所需的图片资产：
 
-- 先提交 `docs/VISUAL_ASSET_PLAN.zh-CN.md` / `.en.md`。
-- 方案标注每个资产的用途、文件名、来源、是否含隐私风险和当前状态。
-- 未通过 review 前，最终视频、GIF 或截图文件不进入仓库。
+- logo；
+- banner；
+- social preview 候选图；
+- workflow 图；
+- demo 图；
+- 可维护源文件，例如 SVG 和 Mermaid。
+
+本期不放视频资产，也不做 GIF。图片资产要有 `assets/README.md` 说明来源、生成方式和边界。
 
 ## Discoverability 标准
 
@@ -76,14 +83,16 @@ agent-skills, skill-md, codex, claude-code, ai-agents, prompt-engineering, workf
 - 未公开视频素材。
 - 必须依赖 Kun 私有环境才能跑通的承诺。
 
-公开版缺少私有能力时，写成 evidence gap 或 standalone mode 限制，不要复制内部材料补洞。
+公开版缺少私有能力时，写成公开版边界，不要复制内部材料补洞。
 
 ## 验收清单
 
 - [ ] README 首屏讲清定位、对象、安装、验证和边界。
 - [ ] 中文主文档和英文辅助文档都存在。
 - [ ] 至少一个 public-safe demo 存在。
-- [ ] 视觉资产先有方案，再放最终素材。
+- [ ] README 首屏不把私有 registry 写成用户安装前提。
+- [ ] logo、banner、social preview、workflow 图、demo 图都存在。
+- [ ] 不包含视频资产。
 - [ ] repo description 和 topics 面向搜索优化。
 - [ ] 验证命令可在公开仓根目录运行。
 - [ ] PR 模板包含 public boundary check。

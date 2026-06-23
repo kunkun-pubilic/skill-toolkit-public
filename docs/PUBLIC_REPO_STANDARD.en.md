@@ -16,11 +16,13 @@ The first screen should include:
 
 ## Bilingual Rule
 
-- Chinese is primary: `README.zh-CN.md` carries the full explanation.
-- English is secondary: `README.md` and `.en.md` docs provide searchable and shareable entry points.
+- Chinese is primary: `README.md` carries the first screen and complete install path.
+- English is secondary: `README.en.md` provides a searchable and shareable entry point.
 - English can be shorter, but it must still include installation, validation, and public boundary notes.
 
 ## Install Rule
+
+Public repositories should assume a clean user environment: no Kun private registry, no private cache, and no need to understand internal governance first.
 
 Public repositories should provide:
 
@@ -38,11 +40,18 @@ Keep at least one public-safe demo:
 - a task that a new reader can understand;
 - clear input, output, boundary, validation, and agent prompt.
 
-## Visual Asset Rule
+## Image Asset Rule
 
-Workflow diagrams, demos, GIFs, and video assets can live in the public repo after review.
+Public repositories should include the images needed by the README:
 
-Before adding final assets, submit a visual asset plan that records purpose, filename, source, privacy risk, and review status.
+- logo;
+- banner;
+- social preview candidate;
+- workflow diagram;
+- demo image;
+- maintainable sources such as SVG and Mermaid.
+
+Video assets and GIFs are out of scope for this pass. Keep an `assets/README.md` that explains source, generation, and boundary.
 
 ## Discoverability
 
@@ -63,6 +72,8 @@ agent-skills, skill-md, codex, claude-code, ai-agents, prompt-engineering, workf
 - [ ] README explains positioning, audience, install, validation, and boundary.
 - [ ] Chinese primary docs and English support docs both exist.
 - [ ] At least one public-safe demo exists.
-- [ ] Visual assets have a review plan before final files are added.
+- [ ] README first screen does not make private registry knowledge an install requirement.
+- [ ] Logo, banner, social preview, workflow diagram, and demo image exist.
+- [ ] No video assets are included.
 - [ ] GitHub description and topics are search-friendly.
 - [ ] Validation commands run from the public repository root.

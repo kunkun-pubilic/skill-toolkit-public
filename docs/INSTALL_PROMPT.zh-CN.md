@@ -13,8 +13,8 @@ https://github.com/kun-agent-system/skill-toolkit-public
 2. Codex 项目使用 .agents/skills；Claude Code 项目使用 .claude/skills。
 3. 保留 contracts/，因为 skill-creator/scripts/create_skill.py 会读取它。
 4. 安装后运行 quick_validate.py 和 audit_skill.py 验证五个 Skill。
-5. 后续涉及 Skill 新建、采用、overlay、修复或演化时，按 WORKFLOW.md 和 skill-registry.yaml 选择最小必要 Skill。
-6. 如果没有 Kun 私有 registry、DOKO、全局 cache 或本机工具，不要阻断；使用 public standalone 模式，并把缺失项写成 evidence gap。
+5. 后续涉及 Skill 新建、采用、overlay、修复或演化时，直接按这五个 Skill 的用途选择最小必要 Skill。
+6. 不要假设我有 Kun 的私有 registry、全局 cache 或本机工具；把我当成一个空系统用户。
 
 安装完成后请输出：
 - 安装到哪些路径；
@@ -35,7 +35,7 @@ https://github.com/kun-agent-system/skill-toolkit-public
 1. 先用 skill-adopter 判断是否已有官方或成熟上游。
 2. 如果有可用上游，优先 adopt 或 overlay，不要从零写。
 3. 如果没有上游，再用 skill-creator 创建。
-4. 如果当前环境没有私有 registry，使用 --public-standalone，并在 official-basis 里记录 evidence gap。
+4. 使用 --public-standalone，按公开版方式创建。
 5. 创建后用 skill-modify 的 quick_validate.py 和 audit_skill.py 验证。
 ```
 

@@ -1,0 +1,11 @@
+flowchart LR
+  A["Need: repeatable capability"] --> B["skill-adopter: find upstream"]
+  B --> C{"Route"}
+  C --> D["Adopt"]
+  C --> E["Overlay"]
+  C --> F["Create"]
+  F --> G["Validate"]
+  D --> G
+  E --> G
+  G --> H["skill-modify: repair"]
+  H --> I["skill-evolver: reuse proven delta"]

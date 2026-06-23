@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="780" viewBox="0 0 1400 780">
+  <rect width="1400" height="780" fill="#fbfbf7"/>
+  
+  <text x="70" y="82" font-family="Inter, -apple-system, BlinkMacSystemFont, 'PingFang SC', sans-serif" font-size="42" font-weight="800" fill="#161616">Demo：从一个需求到可验证 Skill</text>
+  <text x="70" y="126" font-family="Inter, -apple-system, BlinkMacSystemFont, 'PingFang SC', sans-serif" font-size="23" fill="#5f6368">示例不含真实客户材料，只展示 public standalone mode 的最小路径。</text>
+  <rect x="86" y="208" width="276" height="260" rx="26" fill="#ffffff" stroke="#d9ded8" stroke-width="3"/>
+      <circle cx="136" cy="260" r="30" fill="#2b8cbe"/>
+      <text x="127" y="271" font-family="Inter, sans-serif" font-size="28" font-weight="800" fill="#ffffff">1</text>
+      <text x="114" y="330" font-family="Inter, -apple-system, BlinkMacSystemFont, 'PingFang SC', sans-serif" font-size="30" font-weight="800" fill="#161616">输入需求</text>
+      <foreignObject x="114" y="354" width="220" height="86"><div xmlns="http://www.w3.org/1999/xhtml" style="font:22px -apple-system,BlinkMacSystemFont,'PingFang SC',sans-serif;color:#5f6368;line-height:1.35">整理客户消息：摘要、风险、待办、回复建议</div></foreignObject><rect x="404" y="208" width="276" height="260" rx="26" fill="#ffffff" stroke="#d9ded8" stroke-width="3"/>
+      <circle cx="454" cy="260" r="30" fill="#2f9e44"/>
+      <text x="445" y="271" font-family="Inter, sans-serif" font-size="28" font-weight="800" fill="#ffffff">2</text>
+      <text x="432" y="330" font-family="Inter, -apple-system, BlinkMacSystemFont, 'PingFang SC', sans-serif" font-size="30" font-weight="800" fill="#161616">创建 Skill</text>
+      <foreignObject x="432" y="354" width="220" height="86"><div xmlns="http://www.w3.org/1999/xhtml" style="font:22px -apple-system,BlinkMacSystemFont,'PingFang SC',sans-serif;color:#5f6368;line-height:1.35">运行 skill-creator --public-standalone</div></foreignObject><rect x="722" y="208" width="276" height="260" rx="26" fill="#ffffff" stroke="#d9ded8" stroke-width="3"/>
+      <circle cx="772" cy="260" r="30" fill="#f2b705"/>
+      <text x="763" y="271" font-family="Inter, sans-serif" font-size="28" font-weight="800" fill="#ffffff">3</text>
+      <text x="750" y="330" font-family="Inter, -apple-system, BlinkMacSystemFont, 'PingFang SC', sans-serif" font-size="30" font-weight="800" fill="#161616">安装到项目</text>
+      <foreignObject x="750" y="354" width="220" height="86"><div xmlns="http://www.w3.org/1999/xhtml" style="font:22px -apple-system,BlinkMacSystemFont,'PingFang SC',sans-serif;color:#5f6368;line-height:1.35">复制到 .agents/skills 或 .claude/skills</div></foreignObject><rect x="1040" y="208" width="276" height="260" rx="26" fill="#ffffff" stroke="#d9ded8" stroke-width="3"/>
+      <circle cx="1090" cy="260" r="30" fill="#d9480f"/>
+      <text x="1081" y="271" font-family="Inter, sans-serif" font-size="28" font-weight="800" fill="#ffffff">4</text>
+      <text x="1068" y="330" font-family="Inter, -apple-system, BlinkMacSystemFont, 'PingFang SC', sans-serif" font-size="30" font-weight="800" fill="#161616">验证</text>
+      <foreignObject x="1068" y="354" width="220" height="86"><div xmlns="http://www.w3.org/1999/xhtml" style="font:22px -apple-system,BlinkMacSystemFont,'PingFang SC',sans-serif;color:#5f6368;line-height:1.35">quick_validate.py + audit_skill.py</div></foreignObject>
+  <rect x="126" y="548" width="1148" height="116" rx="24" fill="#f8f9fa" stroke="#d9ded8"/>
+  <text x="166" y="588" font-family="SFMono-Regular, Menlo, Consolas, monospace" font-size="22" fill="#161616">python3 skills/skill-modify/scripts/quick_validate.py</text>
+  <text x="166" y="624" font-family="SFMono-Regular, Menlo, Consolas, monospace" font-size="22" fill="#161616">  .agents/skills/customer-message-digest</text>
+  <text x="166" y="660" font-family="SFMono-Regular, Menlo, Consolas, monospace" font-size="24" fill="#2f9e44">PASS: Skill is valid</text>
+  
+</svg>

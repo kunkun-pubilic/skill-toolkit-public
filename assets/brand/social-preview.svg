@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="640" viewBox="0 0 1280 640">
+  <rect width="1280" height="640" fill="#fbfbf7"/>
+  
+  <rect x="54" y="54" width="1172" height="532" rx="44" fill="#ffffff" stroke="#d9ded8" stroke-width="3"/>
+  <text x="104" y="150" font-family="Inter, -apple-system, BlinkMacSystemFont, 'PingFang SC', sans-serif" font-size="54" font-weight="800" fill="#161616">Skill Toolkit Public Pack</text>
+  <text x="104" y="214" font-family="Inter, -apple-system, BlinkMacSystemFont, 'PingFang SC', sans-serif" font-size="30" fill="#5f6368">创建、采用、叠加、修复和演化 Agent Skills</text>
+  <g transform="translate(104 280)">
+    <rect x="0" y="0" width="172" height="74" rx="20" fill="#e7f5ff" stroke="#d9ded8"/><text x="34" y="48" font-family="Inter, sans-serif" font-size="26" font-weight="800" fill="#161616">Adopt</text><rect x="210" y="0" width="172" height="74" rx="20" fill="#ebfbee" stroke="#d9ded8"/><text x="244" y="48" font-family="Inter, sans-serif" font-size="26" font-weight="800" fill="#161616">Overlay</text><rect x="420" y="0" width="172" height="74" rx="20" fill="#fff3bf" stroke="#d9ded8"/><text x="454" y="48" font-family="Inter, sans-serif" font-size="26" font-weight="800" fill="#161616">Create</text><rect x="630" y="0" width="172" height="74" rx="20" fill="#fff0f6" stroke="#d9ded8"/><text x="664" y="48" font-family="Inter, sans-serif" font-size="26" font-weight="800" fill="#161616">Modify</text><rect x="840" y="0" width="172" height="74" rx="20" fill="#f1f3f5" stroke="#d9ded8"/><text x="874" y="48" font-family="Inter, sans-serif" font-size="26" font-weight="800" fill="#161616">Evolve</text>
+  </g>
+  <text x="104" y="500" font-family="Inter, -apple-system, BlinkMacSystemFont, sans-serif" font-size="25" fill="#5f6368">kun-agent-system/skill-toolkit-public</text>
+  
+</svg>

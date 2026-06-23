@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="760" viewBox="0 0 1400 760">
+  <rect width="1400" height="760" fill="#fbfbf7"/>
+  
+  <text x="70" y="80" font-family="Inter, -apple-system, BlinkMacSystemFont, 'PingFang SC', sans-serif" font-size="42" font-weight="800" fill="#161616">Skill 生命周期工作流</text>
+  <text x="70" y="126" font-family="Inter, -apple-system, BlinkMacSystemFont, 'PingFang SC', sans-serif" font-size="23" fill="#5f6368">先找上游，能采用就采用；没有合适上游再创建，真实使用后再沉淀。</text>
+  <rect x="70" y="190" width="350" height="148" rx="24" fill="#f1f3f5" stroke="#d9ded8" stroke-width="3"/>
+      <text x="98" y="246" font-family="Inter, sans-serif" font-size="32" font-weight="800" fill="#161616">Need</text>
+      <text x="98" y="288" font-family="Inter, -apple-system, BlinkMacSystemFont, 'PingFang SC', sans-serif" font-size="22" fill="#5f6368">重复需求出现</text><rect x="500" y="190" width="350" height="148" rx="24" fill="#e7f5ff" stroke="#d9ded8" stroke-width="3"/>
+      <text x="528" y="246" font-family="Inter, sans-serif" font-size="32" font-weight="800" fill="#161616">Adopt</text>
+      <text x="528" y="288" font-family="Inter, -apple-system, BlinkMacSystemFont, 'PingFang SC', sans-serif" font-size="22" fill="#5f6368">先找官方或成熟上游</text><rect x="930" y="190" width="350" height="148" rx="24" fill="#ebfbee" stroke="#d9ded8" stroke-width="3"/>
+      <text x="958" y="246" font-family="Inter, sans-serif" font-size="32" font-weight="800" fill="#161616">Overlay</text>
+      <text x="958" y="288" font-family="Inter, -apple-system, BlinkMacSystemFont, 'PingFang SC', sans-serif" font-size="22" fill="#5f6368">保留上游，加小兼容层</text><rect x="70" y="420" width="350" height="148" rx="24" fill="#fff3bf" stroke="#d9ded8" stroke-width="3"/>
+      <text x="98" y="476" font-family="Inter, sans-serif" font-size="32" font-weight="800" fill="#161616">Create</text>
+      <text x="98" y="518" font-family="Inter, -apple-system, BlinkMacSystemFont, 'PingFang SC', sans-serif" font-size="22" fill="#5f6368">没有上游才创建</text><rect x="500" y="420" width="350" height="148" rx="24" fill="#fff0f6" stroke="#d9ded8" stroke-width="3"/>
+      <text x="528" y="476" font-family="Inter, sans-serif" font-size="32" font-weight="800" fill="#161616">Modify</text>
+      <text x="528" y="518" font-family="Inter, -apple-system, BlinkMacSystemFont, 'PingFang SC', sans-serif" font-size="22" fill="#5f6368">已有 Skill 不好用就修</text><rect x="930" y="420" width="350" height="148" rx="24" fill="#f1f3f5" stroke="#d9ded8" stroke-width="3"/>
+      <text x="958" y="476" font-family="Inter, sans-serif" font-size="32" font-weight="800" fill="#161616">Evolve</text>
+      <text x="958" y="518" font-family="Inter, -apple-system, BlinkMacSystemFont, 'PingFang SC', sans-serif" font-size="22" fill="#5f6368">真实使用后沉淀增量</text>
+  <g stroke="#161616" stroke-width="4" fill="none" stroke-linecap="round" stroke-linejoin="round" opacity="0.78">
+    <path d="M420 264H500"/><path d="M493 252l14 12-14 12"/>
+    <path d="M850 264H930"/><path d="M923 252l14 12-14 12"/>
+    <path d="M1240 338v74H250v8"/><path d="M238 413l12 14 12-14"/>
+    <path d="M420 494H500"/><path d="M493 482l14 12-14 12"/>
+    <path d="M850 494H930"/><path d="M923 482l14 12-14 12"/>
+  </g>
+  <rect x="70" y="660" width="1260" height="46" rx="16" fill="#ffffff" stroke="#d9ded8"/>
+  <text x="96" y="691" font-family="Inter, -apple-system, BlinkMacSystemFont, 'PingFang SC', sans-serif" font-size="22" fill="#161616">完成标准：能安装、能验证、边界清楚，命令跑得通。</text>
+  
+</svg>

@@ -1,5 +1,7 @@
 # Quick Start
 
+This guide assumes a clean user environment. You do not need Kun's private tooling or local cache. Installation means copying the five public Skills into your project.
+
 ## 1. Clone
 
 ```bash

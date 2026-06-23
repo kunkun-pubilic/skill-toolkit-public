@@ -4,6 +4,8 @@ English version: [PUBLIC_EDITION_NOTES.en.md](PUBLIC_EDITION_NOTES.en.md)
 
 这个仓库是 Skill Toolkit 的 public edition，不是 Kun 内部治理系统的完整公开镜像。
 
+公开版默认面向空系统用户：你不需要 Kun 的内部工具链，就可以复制五个 Skill 到自己的 Codex 或 Claude Code 项目里使用。
+
 ## 包含
 
 - 五个 Skill 生命周期入口：
@@ -33,15 +35,14 @@ English version: [PUBLIC_EDITION_NOTES.en.md](PUBLIC_EDITION_NOTES.en.md)
 - 飞书资料页；
 - 私有项目历史、客户材料和凭据。
 
-## 没有私有 registry 时怎么做
+## 普通用户怎么用
 
-使用 standalone 模式：
+使用 public standalone 模式：
 
 - `skill-adopter` 仍然先找官方或成熟上游；
-- 缺少 `dokobot`、`gh` 或 `npx skills` 时，把它写成 evidence gap；
 - `skill-creator` 使用 `--public-standalone` 创建 Skill；
-- 创建结果不能声称已经完成官方锁定，只能说使用了 public standalone evidence；
-- 后续可以补上你自己的 registry、upstream snapshot 或 lockfile。
+- 创建结果不要假装已经接入 Kun 的私有 registry；
+- 后续如果你自己有 registry、upstream snapshot 或 lockfile，可以再接上。
 
 ## 为什么不直接公开整个私有仓
 

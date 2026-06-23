@@ -2,6 +2,8 @@
 
 English version: [QUICK_START.en.md](QUICK_START.en.md)
 
+默认你是一个空系统用户：没有我的内部工具链，也没有我的本地缓存。安装只需要复制五个 Skill 到自己的项目。
+
 ## 1. 克隆公开包
 
 ```bash
@@ -60,7 +62,7 @@ done
 
 ## 5. 用公开 standalone 模式创建一个新 Skill
 
-没有私有 registry 时，使用 `--public-standalone`：
+需要从零创建新 Skill 时，使用 `--public-standalone`：
 
 ```bash
 python3 skills/skill-creator/scripts/create_skill.py customer-message-digest \

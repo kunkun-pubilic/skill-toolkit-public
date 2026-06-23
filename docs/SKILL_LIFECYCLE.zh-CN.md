@@ -45,7 +45,7 @@
 - 这个能力有稳定、可复用的判断流程。
 - 它不需要 MCP、OAuth、浏览器桥、hooks 或 hosted app 这类 runtime 集成。
 
-公开版没有私有 registry 时，用 `--public-standalone`，并把未锁定官方来源写成 evidence gap。
+公开版默认用 `--public-standalone`，不要求用户先接入 Kun 的私有 registry。
 
 ## 4. Modify：修不好用的 Skill
 
@@ -77,8 +77,8 @@
 不要只说“改好了”。每次 Skill 生命周期动作至少留下：
 
 - 改动路径；
-- 来源或 evidence gap；
+- 来源说明；
 - `quick_validate.py` 结果；
 - `audit_skill.py` 结果；
 - 一个 pressure scenario 或真实使用证据；
-- 如果推到 GitHub，再补 commit hash 或 remote hash proof。
+- 如果推到 GitHub，再补对应 commit 或 PR 链接。

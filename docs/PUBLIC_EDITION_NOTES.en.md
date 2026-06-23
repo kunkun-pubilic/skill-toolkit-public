@@ -2,6 +2,8 @@
 
 This repository is the public edition of Skill Toolkit. It is not a full mirror of Kun's private governance system.
 
+The public edition assumes a clean user environment. Users can copy the five public Skills into a Codex or Claude Code project without Kun's private tooling.
+
 ## Included
 
 - Five lifecycle Skills:
@@ -24,11 +26,11 @@ This repository is the public edition of Skill Toolkit. It is not a full mirror 
 
 ## Standalone Mode
 
-When private registry or local tooling is unavailable:
+For normal public users:
 
 - continue in public standalone mode;
-- record missing tools as evidence gaps;
 - use `skill-creator --public-standalone` for local creation;
-- do not claim official source locks unless you actually verified them.
+- do not pretend that Kun's private registry is installed;
+- connect your own registry or lockfile later if you have one.
 
 The public edition keeps the lifecycle method and the reusable Skills. It does not publish Kun's private registry, local cache, or customer/project history.
